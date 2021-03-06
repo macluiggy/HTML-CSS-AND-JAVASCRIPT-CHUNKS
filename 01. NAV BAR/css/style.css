@@ -2,34 +2,73 @@ h2 {
     text-decoration: none;
 }
 
+@font-face {
+    font-family: pixel;
+    src: url('/dot.ttf');
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
 header {
     background-color: rgb(255, 248, 240);
     border: antiquewhite;
     border-top: solid 1px;
     border-bottom: solid 1px;
     line-height: 0px;
+    height: 60px;
+    width: 100%;
+    overflow: hidden;
+    float: left;
 }
 div {
     display: inline-block;
     line-height: 0;
+    position: relative;
+    bottom: 10px;
 }
 
 #logo {
     padding-left: 100px;
     font-size: 40px;
     line-height: 0px;
+    color: rgb(110, 25, 25);
 }
 
 li {
     display: inline-block;
-    margin: 0px 10px;
     vertical-align: middle;
     position: relative;
     bottom: 10px;
+    font-family: pixel;
 }
 
 a {
     text-decoration: none;
     vertical-align: middle;
+    color: black;
+    padding: 30px 10px;
 }
+
+li a:hover {
+    padding: 20px 10px;
+    background-color: black;
+    color: white;
+}
+
+input[type=text] {
+    width: 300px;
+    height: 30px;
+    position: relative;
+    bottom: 7px;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAB3klEQVRIS42VbVkDMRCE3ygACUVBWwdFAgrAAeCkdQAOcEAdUAcFB6AgPJPb9DZ3Sa751eZjZ3Z2di/QXQGIlRva15qe+fvD73zTHrQC6jifzYP0OE4A8tUUZAXhGeIO2NjJCTgCB+C7n/1w2gBgDzyPAaqZ6c5rHWS8X5PoBGFt+r5DAhNz8dlAfAEejdsJ4nbkmmtSABSa7iGK+R8gaSzwjKckO0K4gXiA8DIQmmfqM5DmZ2MuVpXg3j0pmy+DvhtrUoIEh5p1VwElwzXrbZBLRc9ZlM98BmK8BrYQjP2izyWVstB9q4W3dOmiaNn4rBpNVujtKzu5HwqbGoD2pgVrdW7RzlXLu03JEtcQthBlVTcK/NvCiiZR+AFWNSf5l50i1xot7S0U+SJRHg2cjXnDpoXEucDaNJvOpbSdC8OcxS9w3+6FqOCfwK3NJWfrUtrOqEjjWBKoL3LTKbA6/cnNKdVOZETKVnUWFTpfM+zUXLvBGInABOQyoVpuSa5Q6js3/OSWDxuAGte3EI49kM73IKdb+6IV3ao66BtRyaRstFkXDhuLALrkQMIDRGWZViWDYmIaQPWDMx0jAtGIt+DDm4ZES4N0CbDrot7jfLYEUBq2on1L91ZmU8Dx/z+C5p0dsvNpKQAAAABJRU5ErkJggg==");
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    border-radius: 5px;
+    border: solid 1px rgb(149, 110, 37);
+}
+
+
 
