@@ -6,14 +6,20 @@ h2 {
     font-family: pixel;
     src: url('/dot.ttf');
 }
+@font-face {
+    font-family: Merriweather;
+    src: url('/Merriweather-Light.ttf');
+}
 
 body, html {
     margin: 0;
     padding: 0;
 }
 
-header {
+#main {
     background-color: rgb(255, 248, 240);
+    position: absolute;
+    z-index: 1;
     border: antiquewhite;
     border-top: solid 1px;
     border-bottom: solid 1px;
@@ -28,6 +34,7 @@ div {
     line-height: 0;
     position: relative;
     bottom: 10px;
+    float: lef;
 }
 
 #logo {
@@ -69,6 +76,39 @@ input[type=text] {
     border-radius: 5px;
     border: solid 1px rgb(149, 110, 37);
 }
+
+#principal {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 72px;
+}
+
+#image1 {
+    overflow: hidden;
+    width: 102%;
+    height: 100%;
+}
+
+#textPrincipal {
+    position: relative;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    z-index: 2;
+    bottom: 300px;
+    left: 650px;
+}
+
+h1 {
+    font-size: 60px;
+    font-family: Merriweather;
+}
+
+p {
+    
+}
+
+
 
 
 
